@@ -1,2 +1,2 @@
-# C--Player-s-Guide
-Learnings from C# Player's Guide 5th Ed
+# The C# Player's Guide Practice
+Code project learnings or exercises from C# Player's Guide 5th Ed
