@@ -42,7 +42,7 @@ namespace PlayersGuide.Memory
             Console.Write("Manticore!");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\t|");
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.White;;
             Utilities.AddSeperator(true);
             
             // Introduction
@@ -125,7 +125,7 @@ namespace PlayersGuide.Memory
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\t\t\t\t\t\tDIRECT HIT!!!");
-                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.White;
                 return true;
             }
             else if (cannonRange < manticoreRange)
