@@ -1,5 +1,6 @@
 ﻿using PlayersGuide.Switches;
-using PlayersGuide.Methods;
+using PlayersGuide.Memory;
 
 
-TortugaItemShop.StartShopDialogue();
+// TortugaItemShop.StartShopDialogue();
+Manticore.Run();

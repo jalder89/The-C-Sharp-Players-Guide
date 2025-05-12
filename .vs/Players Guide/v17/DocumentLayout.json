@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Software Engineering\\NET\\Players Guide\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|c:\\software engineering\\net\\players guide\\switches\\tortugaitemshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|solutionrelative:switches\\tortugaitemshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|c:\\software engineering\\net\\players guide\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|c:\\software engineering\\net\\players guide\\memory\\manticore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|solutionrelative:memory\\manticore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|c:\\software engineering\\net\\players guide\\methods\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|solutionrelative:methods\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|c:\\software engineering\\net\\players guide\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA00176-8D10-4D0D-81A7-8B9548317792}|Players Guide.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Manticore.cs",
+              "DocumentMoniker": "C:\\Software Engineering\\NET\\Players Guide\\Memory\\Manticore.cs",
+              "RelativeDocumentMoniker": "Memory\\Manticore.cs",
+              "ToolTip": "C:\\Software Engineering\\NET\\Players Guide\\Memory\\Manticore.cs",
+              "RelativeToolTip": "Memory\\Manticore.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwFcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:39:02.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Utilities.cs",
               "DocumentMoniker": "C:\\Software Engineering\\NET\\Players Guide\\Methods\\Utilities.cs",
               "RelativeDocumentMoniker": "Methods\\Utilities.cs",
               "ToolTip": "C:\\Software Engineering\\NET\\Players Guide\\Methods\\Utilities.cs",
               "RelativeToolTip": "Methods\\Utilities.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwGcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T00:59:57.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TortugaItemShop.cs",
-              "DocumentMoniker": "C:\\Software Engineering\\NET\\Players Guide\\Switches\\TortugaItemShop.cs",
-              "RelativeDocumentMoniker": "Switches\\TortugaItemShop.cs",
-              "ToolTip": "C:\\Software Engineering\\NET\\Players Guide\\Switches\\TortugaItemShop.cs",
-              "RelativeToolTip": "Switches\\TortugaItemShop.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAcwH8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:55:32.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Software Engineering\\NET\\Players Guide\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Software Engineering\\NET\\Players Guide\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T18:53:39.394Z",
               "EditorCaption": ""

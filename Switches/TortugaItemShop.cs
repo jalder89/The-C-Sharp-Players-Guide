@@ -16,7 +16,7 @@ namespace PlayersGuide.Switches
     /// </remarks>
     public static class TortugaItemShop
     {
-        private enum MENUS
+        private enum Menus
         {
             MainMenu,
             BuyMenu,
@@ -43,7 +43,7 @@ namespace PlayersGuide.Switches
                 1 => PriceItems(),
                 2 => SellItems(),
                 3 => Exit(),
-                _ => InvalidChoice(MENUS.MainMenu)
+                _ => InvalidChoice(Menus.MainMenu)
             };
         }
 
@@ -79,7 +79,7 @@ namespace PlayersGuide.Switches
                 5 => 20,
                 6 => 200,
                 7 => 2,
-                _ => InvalidChoice(MENUS.BuyMenu)
+                _ => InvalidChoice(Menus.BuyMenu)
             };
 
             if (playerName == "Jessica")
@@ -121,11 +121,11 @@ namespace PlayersGuide.Switches
         {
             switch (CURRENT_MENU)
             {
-                case MENUS.MainMenu:
+                case Menus.MainMenu:
                     Console.WriteLine("Invalid choice. Please try again.");
                     StartShopDialogue();
                     break;
-                case MENUS.BuyMenu:
+                case Menus.BuyMenu:
                     Console.WriteLine("Invalid choice. Please select an item to price.");
                     PriceItems();
                     break;

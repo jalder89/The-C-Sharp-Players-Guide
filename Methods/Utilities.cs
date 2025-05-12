@@ -24,7 +24,7 @@ namespace PlayersGuide.Methods
 
         public static int AskForNumber(string text)
         {
-            Console.WriteLine(text);
+            Console.Write(text);
             string? response = Console.ReadLine();
             do
             {
@@ -50,10 +50,10 @@ namespace PlayersGuide.Methods
 
         public static int AskForNumberInRange(string text, int min, int max)
         {
-            Console.WriteLine(text);
-            string? response = Console.ReadLine();
             do
             {
+                Console.Write(text);
+                string? response = Console.ReadLine();
                 if (response != null)
                 {
                     if (int.TryParse(response,out int result))
@@ -64,23 +64,43 @@ namespace PlayersGuide.Methods
                         }
                         else
                         {
-                            Console.WriteLine("Input not within a valid range, please input a valid number");
+                            Console.WriteLine("\nInput not within a valid range, please input a valid number\n");
+                            AddSeperator();
                             continue;
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Invalid input detected, please input a valid number.");
+                        Console.WriteLine("\nInvalid input detected, please input a valid number.\n");
+                        AddSeperator();
                         continue;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("No input detected, please input a valid number.");
+                    Console.WriteLine("\nNo input detected, please input a valid number.\n");
+                    AddSeperator();
                     continue;
                 }
             } while (true);
 
+        }
+
+        public static void AddSeperator()
+        {
+            Console.WriteLine(new string('-', 120));
+        }
+
+        public static void AddSeperator(bool isTitle)
+        {
+            if (isTitle)
+            {
+                Console.WriteLine("\t\t\t\t" + new string('-', 49) + "\n");
+            }
+            else
+            {
+                Console.WriteLine(new string('-', 120) + "\n");
+            }
         }
     }
 }
