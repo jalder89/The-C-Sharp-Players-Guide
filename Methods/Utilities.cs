@@ -86,6 +86,52 @@ namespace PlayersGuide.Methods
 
         }
 
+        public static int PromptMenuOptions(string[] options)
+        {
+            Console.WriteLine("Please select an option from the menu below:");
+            for (int i = 0; i < options.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {options[i]}");
+            }
+
+            Console.Write("Option: ");
+            string? choice = Console.ReadLine();
+
+            if (int.TryParse(choice, out int selectedOption) && selectedOption >= 1 && selectedOption <= options.Length)
+            {
+                return selectedOption;
+            }
+            else
+            {
+                Console.WriteLine("Invalid option. Please try again.");
+                return -1;
+            }
+        }
+
+        public static int PromptMenuOptions(string prompt, string[] options)
+        {
+            while (true)
+            {
+                Console.WriteLine(prompt);
+                for (int i = 0; i < options.Length; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {options[i]}");
+                }
+
+                Console.Write("Option: ");
+                string? choice = Console.ReadLine();
+
+                if (int.TryParse(choice, out int selectedOption) && selectedOption >= 1 && selectedOption <= options.Length)
+                {
+                    return selectedOption;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid option. Please try again.\n");
+                }
+            }
+        }
+
         public static void AddSeperator()
         {
             Console.WriteLine(new string('-', 120));
