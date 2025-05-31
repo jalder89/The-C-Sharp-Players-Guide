@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using PlayersGuide.Methods;
 
 
@@ -7,27 +8,30 @@ namespace PlayersGuide.Classes
     {
         public static void OpenStore()
         {
-            Console.WriteLine("Welcome to Fletcher's, home of the best arrows in Yargrisil!");
+            // Console.WriteLine("Welcome to Fletcher's, home of the best arrows in Yargrisil!");
+            // Process.Start("say", "-v Matilda -r 190 Welcome to Fletcher's, home of the best arrows in Yargrisil!").WaitForExit();
+            Utilities.HandleDialogue("Welcome to Fletcher's, home of the best arrows in Yargrisil!");
 
             string[] storeMenu = { "Buy", "Sell", "Exit" };
-            int menuChoice = Utilities.PromptMenuOptions("Are you look for anything particular?", storeMenu);
+            
+            int menuChoice = Utilities.PromptMenuOptions("Are you looking for anything particular?", storeMenu);
 
             if (menuChoice == 1)
             {
-                Console.WriteLine("A great choice! We custom craft all of our arrows at Fletchers, I'm sure we have what you need.");
+                Utilities.HandleDialogue("A great choice! We custom craft all of our arrows at Fletchers, I'm sure we have what you need.");
                 int length = PromptArrowLength();
                 ArrowHead arrowHead = PromptArrowHeadType();
                 ArrowFletching arrowFletching = PromptArrowFletchingType();
                 Arrow arrow = new Arrow(length, arrowFletching, arrowHead);
-                Console.WriteLine($"Your arrow will cost {arrow.GetCost()} gold.");
+                Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
             }
             else if (menuChoice == 2)
             {
-                Console.WriteLine("We don't buy arrows, but we can help you craft a new one.");
+                Utilities.HandleDialogue("I'm sorry, we don't actually buy arrows. However, we can help you craft a new one!");
             }
             else
             {
-                Console.WriteLine("Thank you for visiting Fletcher's! Come back soon!");
+                Utilities.HandleDialogue("Thank you for visiting Fletcher's! Come back soon!");
             }
 
         }

@@ -27,9 +27,9 @@ namespace PlayersGuide.Classes
     public class Arrow
     {
 
-        private int _length;
-        private ArrowHead _arrowHead;
-        private ArrowFletching _arrowFletching;
+        public int _length { get; set; }
+        public ArrowHead _arrowHead { get; set; }
+        public ArrowFletching _arrowFletching { get; set; }
 
         public Arrow(int length, ArrowFletching arrowFletching, ArrowHead arrowHead)
         {
@@ -38,10 +38,6 @@ namespace PlayersGuide.Classes
             _arrowFletching = arrowFletching;
 
         }
-
-        public int getLength() => _length;
-        public ArrowHead getHeadType() => _arrowHead;
-        public ArrowFletching getFletchingType() => _arrowFletching;
 
         public int GetCost()
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace PlayersGuide.Methods
 {
@@ -113,6 +114,7 @@ namespace PlayersGuide.Methods
             while (true)
             {
                 Console.WriteLine(prompt);
+                Process.Start("say", $"-v Matilda -r 190 {prompt}").WaitForExit();
                 for (int i = 0; i < options.Length; i++)
                 {
                     Console.WriteLine($"{i + 1}. {options[i]}");
@@ -130,6 +132,24 @@ namespace PlayersGuide.Methods
                     Console.WriteLine("Invalid option. Please try again.\n");
                 }
             }
+        }
+
+        public static void HandleDialogue(string dialogue)
+        {
+            Console.WriteLine(dialogue);
+            Process.Start("say", $"-v Matilda -r 190 {dialogue}").WaitForExit();
+        }
+
+        public static void HandleDialogue(string dialogue, string voice = "Matilda")
+        {
+            Console.WriteLine(dialogue);
+            Process.Start("say", $"-v {voice} -r 190 {dialogue}").WaitForExit();
+        }
+
+        public static void HandleDialogue(string dialogue, string voice = "Matilda", int speechRate = 190)
+        {
+            Console.WriteLine(dialogue);
+            Process.Start("say", $"-v {voice} -r {speechRate} {dialogue}").WaitForExit();
         }
 
         public static void AddSeperator()
