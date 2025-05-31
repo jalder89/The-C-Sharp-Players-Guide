@@ -62,5 +62,20 @@ namespace PlayersGuide.Classes
             return (int)(arrowHeadCost + fletchingCost + shaftCost);
         }
 
+        public static Arrow createBeginnerArrow()
+        {
+            return new Arrow(75, ArrowFletching.GooseFeather, ArrowHead.Wood);
+        }
+
+        public static Arrow createMarksmanArrow()
+        {
+            return new Arrow(65, ArrowFletching.GooseFeather, ArrowHead.Steel);
+        }
+
+        public static Arrow createEliteArrow()
+        {
+            return new Arrow(95, ArrowFletching.Plastic, ArrowHead.Steel);
+        }
+
     }
 }

@@ -18,12 +18,36 @@ namespace PlayersGuide.Classes
 
             if (menuChoice == 1)
             {
-                Utilities.HandleDialogue("A great choice! We custom craft all of our arrows at Fletchers, I'm sure we have what you need.");
-                int length = PromptArrowLength();
-                ArrowHead arrowHead = PromptArrowHeadType();
-                ArrowFletching arrowFletching = PromptArrowFletchingType();
-                Arrow arrow = new Arrow(length, arrowFletching, arrowHead);
-                Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
+                Utilities.HandleDialogue("A great choice! We craft all of our arrows at Fletchers, I'm sure we have what you need.");
+                string[] buyMenu = { "Beginner Arrow", "Marksman Arrow", "Elite Arrow", "Custom", "Exit" };
+                int buyMenuChoice = Utilities.PromptMenuOptions(buyMenu);
+                Arrow? arrow = null;
+                switch (buyMenuChoice)
+                {
+                    case 1:
+                        arrow = Arrow.createBeginnerArrow();
+                        Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
+                        break;
+                    case 2:
+                        arrow = Arrow.createMarksmanArrow();
+                        Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
+                        break;
+                    case 3:
+                        arrow = Arrow.createEliteArrow();
+                        Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
+                        break;
+                    case 4:
+                        int length = PromptArrowLength();
+                        ArrowHead arrowHead = PromptArrowHeadType();
+                        ArrowFletching arrowFletching = PromptArrowFletchingType();
+                        arrow = new Arrow(length, arrowFletching, arrowHead);
+                        Utilities.HandleDialogue($"Your arrow will cost {arrow.GetCost()} gold.");
+                        break;
+                    default:
+                        Utilities.HandleDialogue("Alright... Let me know if you change your mind.");
+                        break;
+
+                }
             }
             else if (menuChoice == 2)
             {
