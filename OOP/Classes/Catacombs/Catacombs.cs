@@ -22,11 +22,11 @@ namespace PlayersGuide.Classes.Catacombs
             _points[0] = PointManager.CreatePoint(2, 3);
             _points[1] = PointManager.CreatePoint(-4, 0);
 
-            int i = 0;
+            int counter = 1;
             foreach (Point point in _points)
             {
-                Console.WriteLine($"Location of point {i + 1}: ({_points[i].X}, {_points[i].Y})");
-                i++;
+                Console.WriteLine($"Location of point {counter}: ({point.X}, {point.Y})");
+                counter++;
             }
 
             Color orange = Color.Orange;
